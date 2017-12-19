@@ -1,0 +1,906 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"dense",
+				"dense_shape"
+			],
+			[
+				"appe",
+				"append"
+			],
+			[
+				"in",
+				"inPath"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "cpp/CMakeLists.txt",
+			"settings":
+			{
+				"buffer_size": 3471,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "cpp/focal_loss_op.cc",
+			"settings":
+			{
+				"buffer_size": 9463,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "// kernel_example.h"
+			}
+		},
+		{
+			"file": "cpp/reference/bias_op_gpu.cu.cc",
+			"settings":
+			{
+				"buffer_size": 9650,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "cpp/reference/bias_op.cc",
+			"settings":
+			{
+				"buffer_size": 16321,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "cpp/focal_loss_op.cu",
+			"settings":
+			{
+				"buffer_size": 14319,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "test_op.py",
+			"settings":
+			{
+				"buffer_size": 7269,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "[ 20%] Building CXX object CMakeFiles/focal_loss.dir/focal_loss_grad_op.cc.o\n/media/rs/0E06CD1706CD0127/Kapok/focal_loss/cpp/focal_loss_grad_op.cc: In instantiation of ‘void FocalLossGradFunctor<Eigen::ThreadPoolDevice, T>::operator()(const CPUDevice&, typename tensorflow::TTypes<T>::ConstMatrix, typename tensorflow::TTypes<T>::ConstVec, typename tensorflow::TTypes<T>::Matrix, typename tensorflow::TTypes<T>::Vec, typename tensorflow::TTypes<T>::ConstScalar, typename tensorflow::TTypes<T>::ConstVec, typename tensorflow::TTypes<T>::Matrix) [with T = int; CPUDevice = Eigen::ThreadPoolDevice; typename tensorflow::TTypes<T>::ConstMatrix = Eigen::TensorMap<Eigen::Tensor<const int, 2, 1, long int>, 16, Eigen::MakePointer>; typename tensorflow::TTypes<T>::ConstVec = Eigen::TensorMap<Eigen::Tensor<const int, 1, 1, long int>, 16, Eigen::MakePointer>; typename tensorflow::TTypes<T>::Matrix = Eigen::TensorMap<Eigen::Tensor<int, 2, 1, long int>, 16, Eigen::MakePointer>; typename tensorflow::TTypes<T>::Vec = Eigen::TensorMap<Eigen::Tensor<int, 1, 1, long int>, 16, Eigen::MakePointer>; typename tensorflow::TTypes<T>::ConstScalar = Eigen::TensorMap<Eigen::TensorFixedSize<const int, Eigen::Sizes<>, 1, long int>, 16, Eigen::MakePointer>]’:\n/media/rs/0E06CD1706CD0127/Kapok/focal_loss/cpp/focal_loss_grad_op.cc:132:12:   required from ‘void FocalLossGradOp<Device, T>::Compute(tensorflow::OpKernelContext*) [with Device = Eigen::ThreadPoolDevice; T = int]’\n/media/rs/0E06CD1706CD0127/Kapok/focal_loss/cpp/focal_loss_grad_op.cc:146:20:   required from here\n/media/rs/0E06CD1706CD0127/Kapok/focal_loss/cpp/focal_loss_grad_op.cc:76:68: error: no match for call to ‘(const Eigen::TensorReshapingOp<const Eigen::DSizes<int, 1>, const Eigen::TensorCwiseBinaryOp<Eigen::internal::scalar_difference_op<int, int>, const Eigen::TensorCwiseBinaryOp<Eigen::internal::scalar_product_op<int, int>, const Eigen::TensorCwiseBinaryOp<Eigen::internal::scalar_product_op<int, int>, const Eigen::TensorCwiseUnaryOp<Eigen::internal::scalar_opposite_op<const int>, const Eigen::TensorReshapingOp<const Eigen::DSizes<int, 2>, const Eigen::TensorMap<Eigen::Tensor<const int, 1, 1, long int>, 16, Eigen::MakePointer> > >, const Eigen::TensorCwiseUnaryOp<FocalLossGradFunctor<Eigen::ThreadPoolDevice, T>::operator()(const CPUDevice&, typename tensorflow::TTypes<T>::ConstMatrix, typename tensorflow::TTypes<T>::ConstVec, typename tensorflow::TTypes<T>::Matrix, typename tensorflow::TTypes<T>::Vec, typename tensorflow::TTypes<T>::ConstScalar, typename tensorflow::TTypes<T>::ConstVec, typename tensorflow::TTypes<T>::Matrix) [with T = int; CPUDevice = Eigen::ThreadPoolDevice; typename tensorflow::TTypes<T>::ConstMatrix = Eigen::TensorMap<Eigen::Tensor<const int, 2, 1, long int>, 16, Eigen::MakePointer>; typename tensorflow::TTypes<T>::ConstVec = Eigen::TensorMap<Eigen::Tensor<const int, 1, 1, long int>, 16, Eigen::MakePointer>; typename tensorflow::TTypes<T>::Matrix = Eigen::TensorMap<Eigen::Tensor<int, 2, 1, long int>, 16, Eigen::MakePointer>; typename tensorflow::TTypes<T>::Vec = Eigen::TensorMap<Eigen::Tensor<int, 1, 1, long int>, 16, Eigen::MakePointer>; typename tensorflow::TTypes<T>::ConstScalar = Eigen::TensorMap<Eigen::TensorFixedSize<const int, Eigen::Sizes<>, 1, long int>, 16, Eigen::MakePointer>]::<lambda(float)>, const Eigen::TensorReshapingOp<const Eigen::DSizes<int, 2>, const Eigen::TensorReductionOp<Eigen::internal::MaxReducer<int>, const Eigen::DSizes<int, 1>, const Eigen::TensorMap<Eigen::Tensor<const int, 2, 1, long int>, 16, Eigen::MakePointer>, Eigen::MakePointer> > > >, const Eigen::TensorMap<Eigen::TensorFixedSize<const int, Eigen::Sizes<>, 1, long int>, 16, Eigen::MakePointer> >, const Eigen::TensorCwiseBinaryOp<Eigen::internal::scalar_product_op<int, int>, const Eigen::TensorReshapingOp<const Eigen::DSizes<int, 2>, Eigen::TensorMap<Eigen::Tensor<int, 1, 1, long int>, 16, Eigen::MakePointer> >, const Eigen::TensorCwiseUnaryOp<Eigen::internal::bind2nd_op<Eigen::internal::scalar_pow_op<double, double> >, const Eigen::TensorCwiseUnaryOp<FocalLossGradFunctor<Eigen::ThreadPoolDevice, T>::operator()(const CPUDevice&, typename tensorflow::TTypes<T>::ConstMatrix, typename tensorflow::TTypes<T>::ConstVec, typename tensorflow::TTypes<T>::Matrix, typename tensorflow::TTypes<T>::Vec, typename tensorflow::TTypes<T>::ConstScalar, typename tensorflow::TTypes<T>::ConstVec, typename tensorflow::TTypes<T>::Matrix) [with T = int; CPUDevice = Eigen::ThreadPoolDevice; typename tensorflow::TTypes<T>::ConstMatrix = Eigen::TensorMap<Eigen::Tensor<const int, 2, 1, long int>, 16, Eigen::MakePointer>; typename tensorflow::TTypes<T>::ConstVec = Eigen::TensorMap<Eigen::Tensor<const int, 1, 1, long int>, 16, Eigen::MakePointer>; typename tensorflow::TTypes<T>::Matrix = Eigen::TensorMap<Eigen::Tensor<int, 2, 1, long int>, 16, Eigen::MakePointer>; typename tensorflow::TTypes<T>::Vec = Eigen::TensorMap<Eigen::Tensor<int, 1, 1, long int>, 16, Eigen::MakePointer>; typename tensorflow::TTypes<T>::ConstScalar = Eigen::TensorMap<Eigen::TensorFixedSize<const int, Eigen::Sizes<>, 1, long int>, 16, Eigen::MakePointer>]::<lambda(float)>, const Eigen::TensorCwiseUnaryOp<FocalLossGradFunctor<Eigen::ThreadPoolDevice, T>::operator()(const CPUDevice&, typename tensorflow::TTypes<T>::ConstMatrix, typename tensorflow::TTypes<T>::ConstVec, typename tensorflow::TTypes<T>::Matrix, typename tensorflow::TTypes<T>::Vec, typename tensorflow::TTypes<T>::ConstScalar, typename tensorflow::TTypes<T>::ConstVec, typename tensorflow::TTypes<T>::Matrix) [with T = int; CPUDevice = Eigen::ThreadPoolDevice; typename tensorflow::TTypes<T>::ConstMatrix = Eigen::TensorMap<Eigen::Tensor<const int, 2, 1, long int>, 16, Eigen::MakePointer>; typename tensorflow::TTypes<T>::ConstVec = Eigen::TensorMap<Eigen::Tensor<const int, 1, 1, long int>, 16, Eigen::MakePointer>; typename tensorflow::TTypes<T>::Matrix = Eigen::TensorMap<Eigen::Tensor<int, 2, 1, long int>, 16, Eigen::MakePointer>; typename tensorflow::TTypes<T>::Vec = Eigen::TensorMap<Eigen::Tensor<int, 1, 1, long int>, 16, Eigen::MakePointer>; typename tensorflow::TTypes<T>::ConstScalar = Eigen::TensorMap<Eigen::TensorFixedSize<const int, Eigen::Sizes<>, 1, long int>, 16, Eigen::MakePointer>]::<lambda(float)>, const Eigen::TensorReshapingOp<const Eigen::DSizes<int, 2>, const Eigen::TensorReductionOp<Eigen::internal::MaxReducer<int>, const Eigen::DSizes<int, 1>, const Eigen::TensorMap<Eigen::Tensor<const int, 2, 1, long int>, 16, Eigen::MakePointer>, Eigen::MakePointer> > > > > > > >) (int)’\n       auto a = true_grad.reshape(Eigen::DSizes<int, 1>(batch_size))(0);\n                                                                    ^\n/media/rs/0E06CD1706CD0127/Kapok/focal_loss/cpp/focal_loss_grad_op.cc: In instantiation of ‘void FocalLossGradFunctor<Eigen::ThreadPoolDevice, T>::operator()(const CPUDevice&, typename tensorflow::TTypes<T>::ConstMatrix, typename tensorflow::TTypes<T>::ConstVec, typename tensorflow::TTypes<T>::Matrix, typename tensorflow::TTypes<T>::Vec, typename tensorflow::TTypes<T>::ConstScalar, typename tensorflow::TTypes<T>::ConstVec, typename tensorflow::TTypes<T>::Matrix) [with T = float; CPUDevice = Eigen::ThreadPoolDevice; typename tensorflow::TTypes<T>::ConstMatrix = Eigen::TensorMap<Eigen::Tensor<const float, 2, 1, long int>, 16, Eigen::MakePointer>; typename tensorflow::TTypes<T>::ConstVec = Eigen::TensorMap<Eigen::Tensor<const float, 1, 1, long int>, 16, Eigen::MakePointer>; typename tensorflow::TTypes<T>::Matrix = Eigen::TensorMap<Eigen::Tensor<float, 2, 1, long int>, 16, Eigen::MakePointer>; typename tensorflow::TTypes<T>::Vec = Eigen::TensorMap<Eigen::Tensor<float, 1, 1, long int>, 16, Eigen::MakePointer>; typename tensorflow::TTypes<T>::ConstScalar = Eigen::TensorMap<Eigen::TensorFixedSize<const float, Eigen::Sizes<>, 1, long int>, 16, Eigen::MakePointer>]’:\n/media/rs/0E06CD1706CD0127/Kapok/focal_loss/cpp/focal_loss_grad_op.cc:132:12:   required from ‘void FocalLossGradOp<Device, T>::Compute(tensorflow::OpKernelContext*) [with Device = Eigen::ThreadPoolDevice; T = float]’\n/media/rs/0E06CD1706CD0127/Kapok/focal_loss/cpp/focal_loss_grad_op.cc:146:20:   required from here\n/media/rs/0E06CD1706CD0127/Kapok/focal_loss/cpp/focal_loss_grad_op.cc:76:68: error: no match for call to ‘(const Eigen::TensorReshapingOp<const Eigen::DSizes<int, 1>, const Eigen::TensorCwiseBinaryOp<Eigen::internal::scalar_difference_op<float, float>, const Eigen::TensorCwiseBinaryOp<Eigen::internal::scalar_product_op<float, float>, const Eigen::TensorCwiseBinaryOp<Eigen::internal::scalar_product_op<float, float>, const Eigen::TensorCwiseUnaryOp<Eigen::internal::scalar_opposite_op<const float>, const Eigen::TensorReshapingOp<const Eigen::DSizes<int, 2>, const Eigen::TensorMap<Eigen::Tensor<const float, 1, 1, long int>, 16, Eigen::MakePointer> > >, const Eigen::TensorCwiseUnaryOp<FocalLossGradFunctor<Eigen::ThreadPoolDevice, T>::operator()(const CPUDevice&, typename tensorflow::TTypes<T>::ConstMatrix, typename tensorflow::TTypes<T>::ConstVec, typename tensorflow::TTypes<T>::Matrix, typename tensorflow::TTypes<T>::Vec, typename tensorflow::TTypes<T>::ConstScalar, typename tensorflow::TTypes<T>::ConstVec, typename tensorflow::TTypes<T>::Matrix) [with T = float; CPUDevice = Eigen::ThreadPoolDevice; typename tensorflow::TTypes<T>::ConstMatrix = Eigen::TensorMap<Eigen::Tensor<const float, 2, 1, long int>, 16, Eigen::MakePointer>; typename tensorflow::TTypes<T>::ConstVec = Eigen::TensorMap<Eigen::Tensor<const float, 1, 1, long int>, 16, Eigen::MakePointer>; typename tensorflow::TTypes<T>::Matrix = Eigen::TensorMap<Eigen::Tensor<float, 2, 1, long int>, 16, Eigen::MakePointer>; typename tensorflow::TTypes<T>::Vec = Eigen::TensorMap<Eigen::Tensor<float, 1, 1, long int>, 16, Eigen::MakePointer>; typename tensorflow::TTypes<T>::ConstScalar = Eigen::TensorMap<Eigen::TensorFixedSize<const float, Eigen::Sizes<>, 1, long int>, 16, Eigen::MakePointer>]::<lambda(float)>, const Eigen::TensorReshapingOp<const Eigen::DSizes<int, 2>, const Eigen::TensorReductionOp<Eigen::internal::MaxReducer<float>, const Eigen::DSizes<int, 1>, const Eigen::TensorMap<Eigen::Tensor<const float, 2, 1, long int>, 16, Eigen::MakePointer>, Eigen::MakePointer> > > >, const Eigen::TensorMap<Eigen::TensorFixedSize<const float, Eigen::Sizes<>, 1, long int>, 16, Eigen::MakePointer> >, const Eigen::TensorCwiseBinaryOp<Eigen::internal::scalar_product_op<float, float>, const Eigen::TensorReshapingOp<const Eigen::DSizes<int, 2>, Eigen::TensorMap<Eigen::Tensor<float, 1, 1, long int>, 16, Eigen::MakePointer> >, const Eigen::TensorCwiseUnaryOp<Eigen::internal::bind2nd_op<Eigen::internal::scalar_pow_op<double, double> >, const Eigen::TensorCwiseUnaryOp<FocalLossGradFunctor<Eigen::ThreadPoolDevice, T>::operator()(const CPUDevice&, typename tensorflow::TTypes<T>::ConstMatrix, typename tensorflow::TTypes<T>::ConstVec, typename tensorflow::TTypes<T>::Matrix, typename tensorflow::TTypes<T>::Vec, typename tensorflow::TTypes<T>::ConstScalar, typename tensorflow::TTypes<T>::ConstVec, typename tensorflow::TTypes<T>::Matrix) [with T = float; CPUDevice = Eigen::ThreadPoolDevice; typename tensorflow::TTypes<T>::ConstMatrix = Eigen::TensorMap<Eigen::Tensor<const float, 2, 1, long int>, 16, Eigen::MakePointer>; typename tensorflow::TTypes<T>::ConstVec = Eigen::TensorMap<Eigen::Tensor<const float, 1, 1, long int>, 16, Eigen::MakePointer>; typename tensorflow::TTypes<T>::Matrix = Eigen::TensorMap<Eigen::Tensor<float, 2, 1, long int>, 16, Eigen::MakePointer>; typename tensorflow::TTypes<T>::Vec = Eigen::TensorMap<Eigen::Tensor<float, 1, 1, long int>, 16, Eigen::MakePointer>; typename tensorflow::TTypes<T>::ConstScalar = Eigen::TensorMap<Eigen::TensorFixedSize<const float, Eigen::Sizes<>, 1, long int>, 16, Eigen::MakePointer>]::<lambda(float)>, const Eigen::TensorCwiseUnaryOp<FocalLossGradFunctor<Eigen::ThreadPoolDevice, T>::operator()(const CPUDevice&, typename tensorflow::TTypes<T>::ConstMatrix, typename tensorflow::TTypes<T>::ConstVec, typename tensorflow::TTypes<T>::Matrix, typename tensorflow::TTypes<T>::Vec, typename tensorflow::TTypes<T>::ConstScalar, typename tensorflow::TTypes<T>::ConstVec, typename tensorflow::TTypes<T>::Matrix) [with T = float; CPUDevice = Eigen::ThreadPoolDevice; typename tensorflow::TTypes<T>::ConstMatrix = Eigen::TensorMap<Eigen::Tensor<const float, 2, 1, long int>, 16, Eigen::MakePointer>; typename tensorflow::TTypes<T>::ConstVec = Eigen::TensorMap<Eigen::Tensor<const float, 1, 1, long int>, 16, Eigen::MakePointer>; typename tensorflow::TTypes<T>::Matrix = Eigen::TensorMap<Eigen::Tensor<float, 2, 1, long int>, 16, Eigen::MakePointer>; typename tensorflow::TTypes<T>::Vec = Eigen::TensorMap<Eigen::Tensor<float, 1, 1, long int>, 16, Eigen::MakePointer>; typename tensorflow::TTypes<T>::ConstScalar = Eigen::TensorMap<Eigen::TensorFixedSize<const float, Eigen::Sizes<>, 1, long int>, 16, Eigen::MakePointer>]::<lambda(float)>, const Eigen::TensorReshapingOp<const Eigen::DSizes<int, 2>, const Eigen::TensorReductionOp<Eigen::internal::MaxReducer<float>, const Eigen::DSizes<int, 1>, const Eigen::TensorMap<Eigen::Tensor<const float, 2, 1, long int>, 16, Eigen::MakePointer>, Eigen::MakePointer> > > > > > > >) (int)’\nCMakeFiles/focal_loss.dir/build.make:1594: recipe for target 'CMakeFiles/focal_loss.dir/focal_loss_grad_op.cc.o' failed\nmake[2]: *** [CMakeFiles/focal_loss.dir/focal_loss_grad_op.cc.o] Error 1\nCMakeFiles/Makefile2:67: recipe for target 'CMakeFiles/focal_loss.dir/all' failed\nmake[1]: *** [CMakeFiles/focal_loss.dir/all] Error 2\nMakefile:83: recipe for target 'all' failed\nmake: *** [all] Error 2\n",
+			"file": "cpp/build/make_output",
+			"file_size": 13660,
+			"file_write_time": 131563263658949583,
+			"settings":
+			{
+				"buffer_size": 13636,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/F/比赛/HengPytorch/10-26-20171101T122045Z-001/code/trainer_resnet101.py",
+			"settings":
+			{
+				"buffer_size": 12508,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "There are a lot of discussions (and confusions) about best single performance model. Different kagglers use differem terminology. Below is what i have.\n\nNow assume that you have trained model,e.g. xception, you can have:\n\n.\n\n(1) image level prediction:\n\nfor each given image x, you predict the 5270 class probability p. If a product T has x1,x2 ...xN images, the product class probability is q = (p1+p2+ ...pN)/N. We only consider average here.\n\n.\n\n(2) prouduct level prediction:\n\nfor a product T with x1,x2 ...xN images, you can estimate product class probability q. There are two method:\n\nyou can ceate a function to take in jointly x1,x2 ...xN, and just output q directly\nq can be combination of p1,p2 ..pN (but not average)\n.\n\nIn the case of (1), for a single model like resnet50, resnet101,xecption, inception3 you can get LB of around 0.68 to 0.73, depending on how well you train. I retrain my previous models and this is an example of results for myxception (LB near 0.72)\n\ntrain for sufficient epoches (maybe you need 10 to 16)\nuse dropout (espeically important for me)\nuse proper augmentation (check the images carefully. what augmentation can you use besides the usual reflect, small shift+scale+rotate, crop, color, illumination, contrast?)\nuse 180x180\n.\n\nIn the case of (2), results of single model is significant improved. I can get se-resnet50 up to 0.75 for LB. Note that the same se-resnet50 is only 0.70 for (1)",
+			"settings":
+			{
+				"buffer_size": 1429,
+				"line_ending": "Unix",
+				"name": "There are a lot of discussions (and confusions) ab"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/MSBuild/MSBuild.sublime-build",
+					""
+				],
+				[
+					"Packages/MSBuild/MSBuild.sublime-build",
+					"Parallel Build"
+				],
+				[
+					"Packages/MSBuild/MSBuild.sublime-build",
+					"Debug Configuration"
+				],
+				[
+					"Packages/MSBuild/MSBuild.sublime-build",
+					"Release Configuration"
+				]
+			],
+			[
+				"Packages/MSBuild/MSBuild.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/User/kapok_cpp_settings.sublime-build",
+					""
+				],
+				[
+					"Packages/User/kapok_cpp_settings.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/User/kapok_cpp_settings.sublime-build",
+				"Run"
+			]
+		],
+		[
+			[
+				[
+					"Packages/User/kapok_cpp_settings.sublime-build",
+					""
+				],
+				[
+					"Packages/User/kapok_cpp_settings.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/User/kapok_cpp_settings.sublime-build",
+					"Debug"
+				]
+			],
+			[
+				"Packages/User/kapok_cpp_settings.sublime-build",
+				"Debug"
+			]
+		],
+		[
+			[
+				[
+					"Packages/User/kapok_cpp_settings.sublime-build",
+					""
+				],
+				[
+					"Packages/User/kapok_cpp_settings.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/User/kapok_cpp_settings.sublime-build",
+					"Debug"
+				],
+				[
+					"Packages/User/kapok_cpp_settings.sublime-build",
+					"DebugWithGDB"
+				]
+			],
+			[
+				"Packages/User/kapok_cpp_settings.sublime-build",
+				"DebugWithGDB"
+			]
+		],
+		[
+			[
+				[
+					"Packages/User/kapok_cpp_settings.sublime-build",
+					""
+				],
+				[
+					"Packages/User/kapok_cpp_settings.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/User/kapok_cpp_settings.sublime-build",
+					"Debug"
+				],
+				[
+					"Packages/User/kapok_cpp_settings.sublime-build",
+					"Debugdd1"
+				]
+			],
+			[
+				"Packages/User/kapok_cpp_settings.sublime-build",
+				"Debugdd1"
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "Package Control: ",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"sftp",
+				"Package Control: Satisfy Dependencies"
+			],
+			[
+				"Pac",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 153.0,
+		"history":
+		[
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())",
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaeeebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"python",
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/F/Research/code/focal_loss",
+		"/F/Research/code/focal_loss/cpp",
+		"/F/Research/code/focal_loss/cpp/reference"
+	],
+	"file_history":
+	[
+		"/F/Research/code/focal_loss/cpp/focal_loss_grad_op.cc",
+		"/F/Research/code/focal_loss/cpp/focal_loss_grad_op.cu",
+		"/F/Research/code/focal_loss/cpp/focal_loss_op.h",
+		"/F/Research/code/focal_loss/cpp/reference/bias_op_gpu.cu.cc",
+		"/F/Research/code/focal_loss/cpp/reference/bias_op_gpu.h",
+		"/F/Research/code/focal_loss/cpp/reference/bias_op.h",
+		"/F/Research/code/focal_loss/cpp/reference/bias_op.cc",
+		"/D/GitPrjs/tensorflow/tensorflow/core/kernels/bias_op_gpu.cu.cc",
+		"/D/GitPrjs/tensorflow/tensorflow/core/kernels/bias_op_gpu.h",
+		"/D/GitPrjs/tensorflow/tensorflow/core/kernels/bias_op.h",
+		"/D/GitPrjs/tensorflow/tensorflow/core/kernels/bias_op.cc",
+		"/D/GitPrjs/tensorflow/tensorflow/core/kernels/segment_reduction_ops.cc",
+		"/D/GitPrjs/tensorflow/tensorflow/core/kernels/scatter_functor_gpu.cu.h",
+		"/F/Research/code/segment_median/cpp/CMakeLists.txt",
+		"/D/GitPrjs/tensorflow/tensorflow/core/kernels/tile_functor_gpu.cu.cc",
+		"/D/GitPrjs/tensorflow/tensorflow/core/kernels/tile_ops.cc",
+		"/D/GitPrjs/tensorflow/tensorflow/core/kernels/tile_functor_cpu.cc",
+		"/D/GitPrjs/tensorflow/tensorflow/core/kernels/tile_functor.h",
+		"/D/GitPrjs/tensorflow/tensorflow/core/kernels/softmax_op_gpu.cu.cc",
+		"/D/GitPrjs/tensorflow/tensorflow/core/kernels/softmax_op_functor.h",
+		"/D/GitPrjs/tensorflow/tensorflow/core/kernels/softmax_op.cc",
+		"/D/GitPrjs/tensorflow/third_party/eigen3/unsupported/Eigen/CXX11/ThreadPool",
+		"/D/GitPrjs/tensorflow/third_party/eigen3/Eigen/Core",
+		"/D/GitPrjs/tensorflow/third_party/eigen3/unsupported/Eigen/CXX11/Tensor",
+		"/D/GitPrjs/tensorflow/third_party/eigen3/unsupported/Eigen/CXX11/Core",
+		"/D/GitPrjs/tensorflow/tensorflow/python/ops/losses/losses_impl.py",
+		"/D/GitPrjs/tensorflow/tensorflow/stream_executor/cuda/cuda_blas.h",
+		"/D/GitPrjs/tensorflow/tensorflow/stream_executor/blas.h",
+		"/F/Research/code/focal_loss/sftp-config.json",
+		"/F/Research/code/focal_loss/focal_loss.sublime-project",
+		"/C/Users/WangChangan/AppData/Local/Programs/Python/Python35/Lib/site-packages/tensorflow/contrib/slim/python/slim/nets/resnet_v2.py",
+		"/C/Users/WangChangan/AppData/Local/Programs/Python/Python35/Lib/site-packages/tensorflow/contrib/slim/python/slim/nets/inception_v3.py",
+		"/F/比赛/HengPytorch/release-20171101T124816Z-001/training_code/trainer_inception3_180.py",
+		"/F/比赛/HengPytorch/release-20171101T124816Z-001/training_code/trainer_xception_180.py",
+		"/F/比赛/HengPytorch/release-20171101T124816Z-001/trained_models/inception_v3.py",
+		"/F/比赛/HengPytorch/10-26-20171101T122045Z-001/code/trainer_resnet101.py",
+		"/F/比赛/HengPytorch/release-20171101T124816Z-001/trained_models/xception.py",
+		"/C/Users/WangChangan/AppData/Local/Programs/Python/Python35/Lib/site-packages/tensorflow/contrib/slim/python/slim/nets/inception_v2.py",
+		"/D/GitPrjs/tensorflow/tensorflow/core/kernels/scatter_functor.cc",
+		"/D/GitPrjs/tensorflow/tensorflow/core/kernels/bincount_op.cc",
+		"/D/GitPrjs/tensorflow/tensorflow/core/kernels/relu_op.h",
+		"/D/GitPrjs/tensorflow/tensorflow/core/kernels/relu_op_functor.h",
+		"/D/GitPrjs/tensorflow/tensorflow/core/kernels/relu_op.cc",
+		"/F/Research/字符识别/Detecting Oriented Text in Natural Images by Linking Segments/seglink-master/seglink/ops.py",
+		"/F/Research/字符识别/Detecting Oriented Text in Natural Images by Linking Segments/seglink-master/seglink/cpp/clip_rboxes_op.cc",
+		"/D/GitPrjs/tensorflow/tensorflow/core/kernels/relu_op_gpu.cu.cc",
+		"/D/GitPrjs/tensorflow/tensorflow/core/kernels/crop_and_resize_op.cc",
+		"/D/GitPrjs/tensorflow/tensorflow/core/kernels/scatter_functor_gpu.cu.cc",
+		"/F/Research/字符识别/Detecting Oriented Text in Natural Images by Linking Segments/seglink-master/seglink/cpp/encode_groundtruth_op.cc",
+		"/F/Research/字符识别/Detecting Oriented Text in Natural Images by Linking Segments/seglink-master/seglink/cpp/project_polygons_op.cc",
+		"/D/GitPrjs/tensorflow/tensorflow/core/kernels/scatter_functor.h",
+		"/C/Users/WangChangan/AppData/Local/Programs/Python/Python35/Lib/site-packages/tensorflow/python/ops/losses/losses_impl.py",
+		"/Z/ProductClass/preprocessing_factory.py",
+		"/Z/ProductClass/inception_preprocessing.py",
+		"/F/比赛/HengPytorch/10-26-20171101T122045Z-001/code/transform.py",
+		"/F/比赛/HengPytorch/10-26-20171101T122045Z-001/code/resnet101.py",
+		"/D/GitPrjs/tensorflow/tensorflow/core/kernels/bitcast_op.cc",
+		"/F/eigen-eigen-5a0156e40feb/unsupported/Eigen/CXX11/src/Tensor/TensorBase.h",
+		"/F/eigen-eigen-5a0156e40feb/unsupported/Eigen/CXX11/src/Tensor/TensorContraction.h",
+		"/F/Research/code/seglink-master/seglink/config.py",
+		"/F/Research/code/focal_loss/cpp/focal_loss_op.cu.cc",
+		"/F/Research/code/seglink-master/seglink/cpp/CMakeLists.txt",
+		"/F/Research/code/seglink-master/seglink/ops.py",
+		"/F/Research/code/focal_loss/cpp/build/CMakeCache.txt",
+		"/F/Research/code/focal_loss/cpp/focal_loss_op.cc",
+		"/D/GitPrjs/tensorflow/tensorflow/core/kernels/ctc_loss_op.cc",
+		"/D/GitPrjs/tensorflow/tensorflow/core/kernels/cross_op.cc",
+		"/D/GitPrjs/tensorflow/tensorflow/core/kernels/constant_op.cc",
+		"/D/GitPrjs/tensorflow/tensorflow/contrib/nn/python/ops/cross_entropy.py",
+		"/D/GitPrjs/tensorflow/tensorflow/python/ops/losses/losses.py",
+		"/D/GitPrjs/tensorflow/tensorflow/python/ops/nn.py",
+		"/D/GitPrjs/tensorflow/tensorflow/contrib/nn/python/ops/sampling_ops.py",
+		"/D/GitPrjs/tensorflow/tensorflow/contrib/losses/python/losses/loss_ops.py",
+		"/D/GitPrjs/tensorflow/tensorflow/core/kernels/scatter_nd_op.cc",
+		"/D/GitPrjs/tensorflow/tensorflow/core/kernels/smooth-hinge-loss.h",
+		"/D/GitPrjs/tensorflow/tensorflow/core/kernels/softmax_op.h",
+		"/C/Users/WangChangan/AppData/Roaming/Sublime Text 3/Packages/User/SFTP.sublime-settings",
+		"/Z/seglink-master/seglink/cpp/CMakeLists.txt",
+		"/F/Research/字符识别/Detecting Oriented Text in Natural Images by Linking Segments/seglink-master/tool/convert_caffe_model/convert_caffemodel_to_ckpt.py",
+		"/F/Research/字符识别/Detecting Oriented Text in Natural Images by Linking Segments/seglink-master/manage.py",
+		"/F/Research/字符识别/Detecting Oriented Text in Natural Images by Linking Segments/seglink-master/exp/sgd/finetune_ic15.json",
+		"/F/Research/字符识别/Detecting Oriented Text in Natural Images by Linking Segments/seglink-master/tool/convert_caffe_model/tests.py",
+		"/F/Research/字符识别/Detecting Oriented Text in Natural Images by Linking Segments/seglink-master/tool/convert_caffe_model/run.sh",
+		"/F/Research/字符识别/Detecting Oriented Text in Natural Images by Linking Segments/seglink-master/tool/convert_caffe_model/dump_caffemodel_weights.py",
+		"/F/Research/字符识别/Detecting Oriented Text in Natural Images by Linking Segments/seglink-master/seglink/model_cnn.py",
+		"/F/Research/字符识别/Detecting Oriented Text in Natural Images by Linking Segments/seglink-master/seglink/unit_tests.py",
+		"/F/Research/字符识别/Detecting Oriented Text in Natural Images by Linking Segments/seglink-master/seglink/data.py",
+		"/F/Research/字符识别/Detecting Oriented Text in Natural Images by Linking Segments/seglink-master/seglink/solver.py",
+		"/F/比赛/HengPytorch/release-20171101T124816Z-001/training_code/transform.py",
+		"/F/比赛/HengPytorch/senet_conversion-20171102T043527Z-001/conversion_script/senet_caffe_to_pytorch.py",
+		"/G/GitPrjs/TensorFlow-Examples/examples/3_NeuralNetworks/convolutional_network.py",
+		"/G/testt.py",
+		"/G/GitPrjs/stanford-tensorflow-tutorials/examples/autoencoder/train.py",
+		"/G/GitPrjs/stanford-tensorflow-tutorials/examples/autoencoder/autoencoder.py",
+		"/F/比赛/densenet/tensorflow-densenet-master/deployment/model_deploy.py",
+		"/F/比赛/densenet/tensorflow-densenet-master/nets/densenet.py",
+		"/C/Users/WangChangan/Desktop/inception_v4_test.py",
+		"/C/Users/WangChangan/Desktop/inception_v4.py",
+		"/F/比赛/training_code/trainer_excited_inception3_180.py",
+		"/F/比赛/training_code/transform.py",
+		"/E/共享相关",
+		"/G/CodeNeedSave/BlogCode/Signal/Signal.cpp",
+		"/D/VSLibs/local/boost_1_60_0/boost/signals/signal_template.hpp",
+		"/D/VSLibs/local/boost_1_60_0/libs/signals/src/slot.cpp",
+		"/D/VSLibs/local/boost_1_60_0/boost/signals2/signal.hpp",
+		"/D/VSLibs/local/boost_1_60_0/boost/signals2/slot.hpp",
+		"/D/VSLibs/local/boost_1_60_0/boost/signals2/signal_base.hpp",
+		"/D/VSLibs/local/boost_1_60_0/boost/signals2/preprocessed_signal.hpp",
+		"/D/VSLibs/local/boost_1_60_0/libs/signals/src/signal_base.cpp",
+		"/G/tt.cpp",
+		"/G/CodeNeedSave/transfer_learning_tutorial-master/eval_flowers.py",
+		"/F/比赛/densenet/tensorflow-densenet-master/nets/nets_factory.py",
+		"/F/比赛/densenet/tensorflow-densenet-master/preprocessing/preprocessing_factory.py",
+		"/F/比赛/densenet/tensorflow-densenet-master/download_and_convert_data.py",
+		"/F/比赛/densenet/tensorflow-densenet-master/datasets/download_and_convert_cifar10.py",
+		"/G/CodingShit/KickStart/2017roundG-1/output1.txt",
+		"/G/CodingShit/KickStart/2017roundG-2/output.txt",
+		"/G/CodingShit/KickStart/2017roundG-1/A-large-practice.in",
+		"/G/CodingShit/KickStart/2017roundG-1/2017roundG_1.cpp",
+		"/G/CodingShit/KickStart/2017roundG-1/A-small-practice.in",
+		"/G/HustProjects/杨文秀/M201272383+杨文秀/项目总结/软件/ATR/SpinImageRecognition/ImageView.cpp",
+		"/G/HustProjects/杨文秀/M201272383+杨文秀/项目总结/软件/ATR/SpinImageRecognition/Formcommandview.cpp",
+		"/G/mingw64/lib/gcc/x86_64-w64-mingw32/7.1.0/include/c++/x86_64-w64-mingw32/32/bits/stdc++.h",
+		"/G/CodingShit/KickStart/2017roundG-2/input.txt",
+		"/G/CodingShit/KickStart/2017roundG-2/2017roundG_2.cpp",
+		"/G/CodingShit/KickStart/2017roundG-1/input.txt",
+		"/G/CodingShit/KickStart/2017roundG-1/output.txt",
+		"/G/CodingShit/KickStart/2017roundA-2/input.txt"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"GetBiasValueDims",
+			"Bias",
+			"BiasGPU",
+			"FocalLossFunctor",
+			"layers_lib",
+			"UnsortedSegmentBaseOp",
+			"TensorContractionOp",
+			"  ",
+			"functor",
+			"allocate_temp",
+			"allocate",
+			"allocate_temp",
+			"softmax_cross_entropy_with_logits",
+			"top_accuracy",
+			"get_learning_rate",
+			"load_pretrain_file",
+			"top_accuracy",
+			"is_training",
+			"depth",
+			"aux",
+			"auxiliary",
+			"Auxiliary",
+			"logits",
+			"logit",
+			"resnet_arg_scope",
+			"weights_regularizer",
+			"default_image_size",
+			"AuxLogits",
+			"variables_to_train",
+			"_get_variables_to_train",
+			"moving_average_decay",
+			"end_learning_rate",
+			"_M_get_Tp_allocator",
+			"_M_default_initialize",
+			"emd",
+			"inception_v3_arg_scope",
+			"softmax",
+			"layers_lib.softmax",
+			"InceptionV3/Logits",
+			"default",
+			"default_image",
+			"inception_v3",
+			"WORD",
+			"BYTE",
+			"_lmdif",
+			"curve",
+			"curv",
+			"wrap_function",
+			"OptimizeResult",
+			"]\n",
+			"sobel",
+			"Sobel",
+			"S2",
+			"s2",
+			"CPartionDetection"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"m_pEMData",
+			"unsigned short",
+			"char"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": true,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "cpp/CMakeLists.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3471,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1396,
+								1396
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": true,
+							"syntax": "Packages/Makefile/Makefile.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "cpp/focal_loss_op.cc",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9463,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8509,
+								8710
+							]
+						],
+						"settings":
+						{
+							"auto_name": "// kernel_example.h",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"sftp_duplicate_views": 0,
+							"synced": true,
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3053.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "cpp/reference/bias_op_gpu.cu.cc",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9650,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": true,
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2508.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "cpp/reference/bias_op.cc",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 16321,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8507,
+								8523
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": true,
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3926.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "cpp/focal_loss_op.cu",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 14319,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								12154,
+								12154
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": true,
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 4573.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "test_op.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7269,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1154,
+								1154
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": true,
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 199.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "cpp/build/make_output",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 13636,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6538,
+								6538
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": true,
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 114.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/F/比赛/HengPytorch/10-26-20171101T122045Z-001/code/trainer_resnet101.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 12508,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7453,
+								7453
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3078.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1429,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								727,
+								727
+							]
+						],
+						"settings":
+						{
+							"auto_name": "There are a lot of discussions (and confusions) ab",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 186.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 124.0
+	},
+	"pinned_build_system": "Packages/Python/Python.sublime-build",
+	"project": "focal_loss.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"F:\\SublimeTextPrjs\\common.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"emdMakeExtrema"
+			]
+		],
+		"width": 392.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 213.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
